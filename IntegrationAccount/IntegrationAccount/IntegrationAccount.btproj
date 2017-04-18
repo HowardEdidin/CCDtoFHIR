@@ -125,8 +125,22 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
-    <Map Include="CCDtoFHIR.btm">
-      <TypeName>CCDtoFHIR</TypeName>
+    <Schema Include="voc.xsd">
+      <TypeName>voc</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="bundle.xsd">
+      <TypeName>bundle</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="CCDtoCondition.btm">
+      <TypeName>CCDtoCondition</TypeName>
       <Namespace>IntegrationAccount</Namespace>
       <SubType>Task</SubType>
     </Map>
