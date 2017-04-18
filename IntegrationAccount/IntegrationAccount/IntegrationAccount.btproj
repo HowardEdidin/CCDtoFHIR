@@ -111,6 +111,33 @@
       <SubType>Designer</SubType>
     </Schema>
   </ItemGroup>
+  <ItemGroup>
+    <Schema Include="CDA.xsd">
+      <TypeName>CDA</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+    <Schema Include="datatypes-base.xsd">
+      <TypeName>datatypes_base</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+    <Schema Include="datatypes.xsd">
+      <TypeName>datatypes</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+    <Schema Include="NarrativeBlock.xsd">
+      <TypeName>NarrativeBlock</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+    <Schema Include="POCD_MT000040.xsd">
+      <TypeName>POCD_MT000040</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.CurrentVersion.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Azure Integration SDK\IntegrationTasks.targets" />
 </Project>
