@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BD4296B-A698-45CC-85D1-5BB988C35CF0}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>IntegrationAccount</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Schema Include="fhir-single.xsd">
+      <TypeName>fhir_single</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="fhir-base.xsd">
+      <TypeName>fhir_base</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="fhir-xhtml.xsd">
+      <TypeName>fhir_xhtml</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="xml.xsd">
+      <TypeName>xml</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="patient.xsd">
+      <TypeName>patient</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="fhir-all.xsd">
+      <TypeName>fhir_all</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="observation.xsd">
+      <TypeName>observation</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="diagnosticreport.xsd">
+      <TypeName>diagnosticreport</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="condition.xsd">
+      <TypeName>condition</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="detectedissue.xsd">
+      <TypeName>detectedissue</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="riskassessment.xsd">
+      <TypeName>riskassessment</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="medicationstatement.xsd">
+      <TypeName>medicationstatement</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Designer</SubType>
+    </Schema>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.CurrentVersion.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Azure Integration SDK\IntegrationTasks.targets" />
+</Project>
