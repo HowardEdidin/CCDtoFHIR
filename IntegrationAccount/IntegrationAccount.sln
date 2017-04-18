@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationAccount", "IntegrationAccount\IntegrationAccount.btproj", "{6BD4296B-A698-45CC-85D1-5BB988C35CF0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{38CE7AE7-88CA-4A5C-9376-91EF6C99D75C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Desktop\ccd map  to Fhir.xlsx = ..\..\..\..\..\Desktop\ccd map  to Fhir.xlsx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
