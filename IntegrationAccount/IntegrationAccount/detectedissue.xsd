@@ -54,11 +54,11 @@
               <xs:documentation xml:lang="en">Business identifier associated with the detected issue record.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="ObservationStatus">
+          <!--<xs:element name="status" minOccurs="1" maxOccurs="1" type="ObservationStatus">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates the status of the detected issue.</xs:documentation>
            </xs:annotation>
-          </xs:element>
+          </xs:element>-->
           <xs:element name="category" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies the general type of issue identified.</xs:documentation>
@@ -134,7 +134,7 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:simpleType name="ObservationStatus-list">
+  <!--<xs:simpleType name="ObservationStatus-list">
     <xs:restriction base="code-primitive">
       <xs:enumeration value="registered">
         <xs:annotation>
@@ -177,8 +177,8 @@
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="ObservationStatus">
+  </xs:simpleType>-->
+  <!--<xs:complexType name="ObservationStatus">
     <xs:annotation>
       <xs:documentation xml:lang="en">Indicates the status of the identified issue</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
@@ -188,7 +188,7 @@
         <xs:attribute name="value" type="ObservationStatus-list" use="optional"/>
       </xs:extension>
     </xs:complexContent>
-  </xs:complexType>
+  </xs:complexType>-->
   <xs:simpleType name="DetectedIssueSeverity-list">
     <xs:restriction base="code-primitive">
       <xs:enumeration value="high">

@@ -28,13 +28,6 @@
     <RootNamespace>IntegrationAccount</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Schema Include="fhir-single.xsd">
-      <TypeName>fhir_single</TypeName>
-      <Namespace>IntegrationAccount</Namespace>
-      <SubType>Designer</SubType>
-    </Schema>
-  </ItemGroup>
-  <ItemGroup>
     <Schema Include="fhir-base.xsd">
       <TypeName>fhir_base</TypeName>
       <Namespace>IntegrationAccount</Namespace>
@@ -58,13 +51,6 @@
   <ItemGroup>
     <Schema Include="patient.xsd">
       <TypeName>patient</TypeName>
-      <Namespace>IntegrationAccount</Namespace>
-      <SubType>Designer</SubType>
-    </Schema>
-  </ItemGroup>
-  <ItemGroup>
-    <Schema Include="fhir-all.xsd">
-      <TypeName>fhir_all</TypeName>
       <Namespace>IntegrationAccount</Namespace>
       <SubType>Designer</SubType>
     </Schema>
@@ -137,6 +123,13 @@
       <Namespace>IntegrationAccount</Namespace>
       <SubType>Designer</SubType>
     </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="CCDtoFHIR.btm">
+      <TypeName>CCDtoFHIR</TypeName>
+      <Namespace>IntegrationAccount</Namespace>
+      <SubType>Task</SubType>
+    </Map>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.CurrentVersion.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Azure Integration SDK\IntegrationTasks.targets" />
